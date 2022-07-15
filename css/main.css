@@ -1,0 +1,90 @@
+:root {
+    --main-bg-color: #232427;
+    --main-fg-color: #FBFAF5;
+}
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-fg-color);
+    padding: 0 2%;
+    }
+
+    /* Atomic Selectors */
+.pt10 {
+    padding-top: 10%;
+}
+
+.pt5 {
+    padding-top: 5%;
+}
+
+.pb10 {
+    padding-bottom: 10%
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.main-paragraph {
+    letter-spacing: 2px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.page__logo {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.page__logo > .logo {
+    min-width: 340px;
+    min-height: 160px;
+    background-color: var(--main-fg-color);
+    color: var(--main-bg-color);
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 3.5rem;
+    border-radius: 5px;
+}
+
+.page__logo > .info {
+    margin-top: 10%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.page__logo > .social {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page__logo > .logo > p:first-child {
+    padding-left: 7px;
+    font-size: 3.9rem;
+    margin-bottom: -10px;
+    margin-top: 15px;
+}
